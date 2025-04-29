@@ -1,0 +1,18 @@
+Copyright (c) 2025 Eismacherei Wien
+
+Alle Rechte vorbehalten.
+
+Die Inhalte dieses Projekts (HTML, CSS, JS, Bilder, Texte, Layouts, Designs) sind urheberrechtlich geschützt. 
+Die kommerzielle Nutzung, Vervielfältigung oder Weitergabe – ganz oder teilweise – ist ohne ausdrückliche schriftliche Genehmigung untersagt.
+
+Erlaubt ist:
+- Verwendung und Bearbeitung für private Zwecke
+- Inspiration zur Erstellung eigener Werke, sofern keine Kopie vorliegt
+
+Nicht erlaubt ist:
+- Verbreitung dieses Projekts als eigenes Werk
+- Verkauf oder Re-Branding
+- Nutzung von Bildern, Marken oder Namen der Eismacherei ohne Zustimmung
+
+Icon Set: [Boxicons](https://boxicons.com/) unter MIT-Lizenz
+Schriftart: [Poppins](https://fonts.google.com/specimen/Poppins) unter SIL Open Font License
