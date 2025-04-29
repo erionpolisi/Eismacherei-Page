@@ -698,27 +698,6 @@ input{
   }
 }
 
-/* For medium devices */
-@media screen and (min-width: 576px){
-  .about-container{
-    grid-template-columns: .8fr;
-    justify-content: center;
-  }
-
-  @media screen and (max-width: 576px) {
-    .home-buttons {
-      flex-direction: column;
-      gap: 1rem;
-      align-items: stretch;
-    }
-  
-    .home-buttons .button,
-    .home-buttons .button2 {
-      width: 100%;
-    }
-  }
-  
-
 @media screen and (min-width: 767px){
   body{
     margin: 0;
@@ -805,6 +784,22 @@ input{
     right: initial;
     bottom: 0;
     left: 15%;
+  }
+}
+
+/* For all devices smaller than 992px */
+@media screen and (max-width: 992px) {
+  .home-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .home-buttons .button,
+  .home-buttons .button2 {
+    width: auto;
+    margin: 0 auto;
   }
 }
 
