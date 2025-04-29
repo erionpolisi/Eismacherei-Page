@@ -705,6 +705,20 @@ input{
     justify-content: center;
   }
 
+  @media screen and (max-width: 576px) {
+    .home-buttons {
+      flex-direction: column;
+      gap: 1rem;
+      align-items: stretch;
+    }
+  
+    .home-buttons .button,
+    .home-buttons .button2 {
+      width: 100%;
+    }
+  }
+  
+
 @media screen and (min-width: 767px){
   body{
     margin: 0;
