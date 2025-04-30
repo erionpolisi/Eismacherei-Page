@@ -70,30 +70,3 @@ setInterval(() => {
   }
 }, 30);
 
-let touchStartX = 0;
-let isSwiping = false;
-
-scrollWrapper.addEventListener('touchstart', (e) => {
-  isHovering = true;
-  touchStartX = e.touches[0].clientX;
-  isSwiping = true;
-});
-
-scrollWrapper.addEventListener('touchmove', (e) => {
-  if (!isSwiping) return;
-
-  const deltaX = e.touches[0].clientX - touchStartX;
-  if (Math.abs(deltaX) > 30) {
-    scrollWrapper.scrollBy({
-      left: -deltaX,
-      behavior: 'smooth'
-    });
-    touchStartX = e.touches[0].clientX;
-  }
-});
-
-scrollWrapper.addEventListener('touchend', () => {
-  isSwiping = false;
-  isHovering = false;
-});
-
