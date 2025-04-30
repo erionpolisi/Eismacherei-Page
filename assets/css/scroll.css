@@ -1,0 +1,57 @@
+.scroll-gallery {
+    overflow-x: auto;
+    display: flex;
+    scroll-behavior: smooth;
+    gap: 1rem;
+    padding: 2rem;
+    background: #fef6e4;
+    position: relative;
+  }
+
+  .scroll-gallery-inner {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .scroll-slide {
+    flex: 0 0 auto;
+    width: 300px;
+    border-radius: 1rem;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    pointer-events: auto;
+  }
+
+  .scroll-slide img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+
+  .scroll-slide-title {
+    font-size: var(--h3-font-size);
+    padding: 1rem;
+    color: var(--title-color);
+  }
+
+  .scroll-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+
+  .scroll-btn {
+    font-size: 2rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: var(--first-color);
+    transition: color 0.3s;
+  }
+
+  .scroll-btn:hover {
+    color: var(--first-color-alt);
+  }
