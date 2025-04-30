@@ -88,5 +88,37 @@ const moreTXT = document.getElementById('moreTXT');
           moreBTN.innerText = isHidden ? 'Mehr' : 'Weniger anzeigen';
         });
       }
-      
+
+/*  NAVIGATION PER PFEILTASTEN + Auto-Jump */
+let navIndex = 0;
+let isScrolling = false;
+
+// Erkenne aktives Scrollen
+window.addEventListener('scroll', () => {
+    isScrolling = true;
+    clearTimeout(window.scrollTimeout);
+    window.scrollTimeout = setTimeout(() => {
+        isScrolling = false;
+    }, 200); // 200ms nach Scroll-Ende wieder freigeben
+});
+
+document.addEventListener('keydown', (e) => {
+    if (isScrolling || navLinks.length === 0) return;
+
+    if (e.key === 'ArrowRight') {
+        navIndex = (navIndex + 1) % navLinks.length;
+    } else if (e.key === 'ArrowLeft') {
+        navIndex = (navIndex - 1 + navLinks.length) % navLinks.length;
+    } else {
+        return;
+    }
+
+    const nextLink = navLinks[navIndex];
+    nextLink.classList.add('active-link');
+    nextLink.click();
+
+    e.preventDefault();
+});
+
+
 
