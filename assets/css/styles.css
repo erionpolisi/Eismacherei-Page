@@ -141,7 +141,22 @@ input{
   outline: none;
 }
 
+.back-button {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  background: var(--first-color);
+  color: var(--title-color);
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  font-weight: var(--font-semi-bold);
+  text-decoration: none;
+  transition: 0.3s;
+}
 
+.back-button:hover {
+  background: var(--first-color-alt);
+}
 
 .hidden{
   display: none;
@@ -706,6 +721,10 @@ input{
   .footer-img-two{
     width: 250px;
     height: 200px;
+  }
+
+  #zrk-btn{
+    display: none;
   }
 }
 
