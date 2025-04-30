@@ -1,0 +1,60 @@
+/* angebot-prototype.css */
+
+.angebot-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem 0;
+  }
+  
+  .angebot-content {
+    padding: 2rem 1rem;
+    border-radius: 1.5rem;
+    background: var(--container-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .angebot-content:hover {
+    transform: translateY(-4px);
+  }
+  
+  .angebot-img {
+    width: 120px;
+    margin-bottom: var(--mb-1);
+    transition: 0.3s;
+  }
+  
+  .angebot-title {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+    margin-bottom: var(--mb-0-5);
+  }
+  
+  .angebot-subtitle {
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+    margin-bottom: var(--mb-1);
+  }
+  
+  .angebot-button {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.75rem;
+    background: var(--first-color);
+    color: var(--title-color);
+    transition: 0.3s;
+  }
+  
+  .angebot-icon {
+    font-size: 1.25rem;
+  }
+  
