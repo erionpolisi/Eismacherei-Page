@@ -1,5 +1,6 @@
 .scroll-gallery {
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
     display: flex;
     scroll-behavior: smooth;
     gap: 1rem;
