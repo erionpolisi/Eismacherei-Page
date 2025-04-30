@@ -37,8 +37,8 @@
   --first-color: hsl(330, 70%, 45%);
   --first-color-alt: hsl(330, 70%, 30%);
   --second-color: hsl(330, 70%, 65%);
-  --title-color: hsl(var(--hue), 4%, 0%);
-  --text-color: hsl(var(--hue), 4%, 10%);
+  --title-color: hsl(var(--hue), 4%, 10%);
+  --text-color: hsl(var(--hue), 4%, 15%);
   --text-color-light: hsl(var(--hue), 4%, 55%);
 
   /* Body colors */
@@ -652,7 +652,7 @@ input{
 }
 
 .footer-link:hover{
-  color: var(--title-color);
+  color: var(--text-color-light);
 }
 
 .footer-copy{
@@ -920,5 +920,4 @@ input{
   0% { transform: translate(0,  0px); }
   50%  { transform: translate(0, 15px); }
   100%   { transform: translate(0, -0px); }   
-}
 }
