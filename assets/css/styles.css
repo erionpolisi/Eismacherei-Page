@@ -696,6 +696,17 @@ input{
     grid-template-columns: .8fr;
     justify-content: center;
   }
+
+}
+
+@media screen and (max-width: 767px){
+  .footer-img-one{
+    width: 180px;
+  }
+  .footer-img-two{
+    width: 250px;
+    height: 200px;
+  }
 }
 
 @media screen and (min-width: 767px){
@@ -887,19 +898,20 @@ input{
   }
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1400px){
   .home-img{
     height: 420px;
   }
   .footer-img-one{
-    width: 220px;
-    right: 6%;
+    width: 250px;
+    right: 2%;
     top: 20%;
   }
   .footer-img-two{
-    width: 280px;
+    width: 230px;
+    height: 200px;
     top: 40%;
-    left: -1%;
+    left: 1%;
   }
 }
 
