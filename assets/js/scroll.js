@@ -1,41 +1,41 @@
 const scrollGalleryEl = document.getElementById('scrollGallery');
 const scrollWrapper = scrollGalleryEl.parentElement;
 
-const slideData = [
-  { src: '../assets/img/Torten/torte1-img.jpg', title: 'Motivtorte' },
-  { src: '../assets/img/Torten/torte2-img.jpg', title: 'Malakoff' },
-  { src: '../assets/img/Torten/torte3-img.jpg', title: 'Motivtorte' },
-  { src: '../assets/img/Torten/torte4-img.jpg', title: 'Motivtorte' },
-  { src: '../assets/img/Torten/torte5-img.jpg', title: 'Schnitten' },
-  { src: '../assets/img/Torten/torte6-img.jpg', title: 'Motivtorte' },
-  { src: '../assets/img/Torten/torte7-img.jpg', title: 'Malakoff' },
-  { src: '../assets/img/Torten/torte8-img.jpg', title: 'Esterhazy' },
-  { src: '../assets/img/Torten/torte9-img.jpg', title: 'Motivtorte' },
-  { src: '../assets/img/Torten/torte10-img.jpg', title: 'Mozarttorte' }
+async function fetchSlideData() {
+  const res = await fetch("angebot-json/torten.json");
+  if (!res.ok) throw new Error("Fehler beim Laden der torten.json");
+  return res.json();
+}
 
-];
-
-function createSlide({ src, title }) {
+function createSlide({ image, title }) {
   const slide = document.createElement('div');
   slide.className = 'scroll-slide';
   slide.innerHTML = `
-    <img src="${src}" alt="${title}">
+    <img src="${image}" alt="${title}">
     <div class="scroll-slide-title">${title}</div>
   `;
   return slide;
 }
 
-function appendSlides() {
-  slideData.forEach(data => {
+let tortenData = [];
+
+async function appendSlides() {
+  if (tortenData.length === 0) return;
+  tortenData.forEach(data => {
     scrollGalleryEl.appendChild(createSlide(data));
   });
 }
 
-// Initial zwei Sätze laden
-appendSlides();
-appendSlides();
+fetchSlideData()
+  .then(data => {
+    tortenData = data;
+    appendSlides();
+    appendSlides(); // doppelt laden
+  })
+  .catch(err => {
+    console.error("Fehler beim Laden der Torten-Daten:", err);
+  });
 
-// Nachladen am Ende
 scrollWrapper.addEventListener('scroll', () => {
   const scrollLeft = scrollWrapper.scrollLeft;
   const totalWidth = scrollGalleryEl.scrollWidth;
@@ -46,7 +46,6 @@ scrollWrapper.addEventListener('scroll', () => {
   }
 });
 
-// Manuelles Scrollen
 function manualScroll(dir) {
   scrollWrapper.scrollBy({
     left: dir * 320,
@@ -54,7 +53,6 @@ function manualScroll(dir) {
   });
 }
 
-// Auto-Scroll mit Hover-Pause
 let isHovering = false;
 const scrollBtns = document.querySelectorAll('.scroll-btn');
 
@@ -71,4 +69,3 @@ setInterval(() => {
     });
   }
 }, 30);
-

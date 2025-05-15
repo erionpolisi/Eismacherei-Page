@@ -1,0 +1,102 @@
+[
+  {
+    "title": "Motivtorte",
+    "image": "../assets/img/Torten/torte1-img.jpg",
+    "alt": "Bunte Motivtorte mit Figurendekor",
+    "description": "Individuell gestaltete Torte mit essbaren Dekorelementen – ideal für besondere Anlässe.",
+    "tags": ["motivtorte", "festlich"],
+    "available": true,
+    "copyright": "© 2025 Eismacherei",
+    "license": "Nur zur Verwendung auf www.eismacherei.at"
+  },
+  {
+    "title": "Malakoff",
+    "image": "../assets/img/Torten/torte2-img.jpg",
+    "alt": "Malakofftorte mit Biskuit und Creme",
+    "description": "Luftige Biskuitcreme-Torte mit Mandelgeschmack und klassischem Flair.",
+    "tags": ["klassiker", "mandel"],
+    "available": true,
+    "copyright": "© 2025 Eismacherei",
+    "license": "Nur zur Verwendung auf www.eismacherei.at"
+  },
+  {
+    "title": "Motivtorte",
+    "image": "../assets/img/Torten/torte3-img.jpg",
+    "alt": "Geburtstagstorte mit Motiven",
+    "description": "Kreativ dekorierte Torte mit Wunschmotiv – besonders bei Kindern beliebt.",
+    "tags": ["motivtorte", "geburtstag"],
+    "available": true,
+    "copyright": "© 2025 Eismacherei",
+    "license": "Nur zur Verwendung auf www.eismacherei.at"
+  },
+  {
+    "title": "Motivtorte",
+    "image": "../assets/img/Torten/torte4-img.jpg",
+    "alt": "Detailreiche Motivtorte",
+    "description": "Handgemachte Torte mit farbenfrohem Design und liebevollen Details.",
+    "tags": ["motivtorte"],
+    "available": true,
+    "copyright": "© 2025 Eismacherei",
+    "license": "Nur zur Verwendung auf www.eismacherei.at"
+  },
+  {
+    "title": "Schnitten",
+    "image": "../assets/img/Torten/torte5-img.jpg",
+    "alt": "Gemischte Schnitten mit Creme und Früchten",
+    "description": "Feine Auswahl an Cremeschnitten, fruchtig und sahnig zugleich.",
+    "tags": ["schnitten", "fruchtig"],
+    "available": true,
+    "copyright": "© 2025 Eismacherei",
+    "license": "Nur zur Verwendung auf www.eismacherei.at"
+  },
+  {
+    "title": "Motivtorte",
+    "image": "../assets/img/Torten/torte6-img.jpg",
+    "alt": "Festlich verzierte Motivtorte",
+    "description": "Personalisierbare Torte mit farbiger Fondant-Deko.",
+    "tags": ["motivtorte", "dekoriert"],
+    "available": true,
+    "copyright": "© 2025 Eismacherei",
+    "license": "Nur zur Verwendung auf www.eismacherei.at"
+  },
+  {
+    "title": "Malakoff",
+    "image": "../assets/img/Torten/torte7-img.jpg",
+    "alt": "Malakofftorte mit Biskuit und Creme",
+    "description": "Sahnige Biskuit-Mandel-Torte – ein echter Klassiker.",
+    "tags": ["klassiker", "sahnig"],
+    "available": true,
+    "copyright": "© 2025 Eismacherei",
+    "license": "Nur zur Verwendung auf www.eismacherei.at"
+  },
+  {
+    "title": "Esterhazy",
+    "image": "../assets/img/Torten/torte8-img.jpg",
+    "alt": "Esterhazytorte mit Nussbaiser und Creme",
+    "description": "Feine Schichten aus Nussbaiser und Buttercreme – traditionsreiche Torte aus der k.u.k. Zeit.",
+    "tags": ["klassiker", "nussig", "traditionell"],
+    "available": true,
+    "copyright": "© 2025 Eismacherei",
+    "license": "Nur zur Verwendung auf www.eismacherei.at"
+  },
+  {
+    "title": "Motivtorte",
+    "image": "../assets/img/Torten/torte9-img.jpg",
+    "alt": "Motivtorte mit Geburtstagsdeko",
+    "description": "Verspielte Motivtorte für Kindergeburtstage oder besondere Feiern.",
+    "tags": ["motivtorte", "geburtstag", "kinder"],
+    "available": true,
+    "copyright": "© 2025 Eismacherei",
+    "license": "Nur zur Verwendung auf www.eismacherei.at"
+  },
+  {
+    "title": "Mozarttorte",
+    "image": "../assets/img/Torten/torte10-img.jpg",
+    "alt": "Mozarttorte mit Pistazien und Schokolade",
+    "description": "Edle Torte mit Schokoladenböden, Pistaziencreme und Marzipan.",
+    "tags": ["klassiker", "nussig", "schokolade"],
+    "available": true,
+    "copyright": "© 2025 Eismacherei",
+    "license": "Nur zur Verwendung auf www.eismacherei.at"
+  }
+]
