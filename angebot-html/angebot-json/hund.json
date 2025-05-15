@@ -1,6 +1,12 @@
 [
-    {
-        "title": "Leber",
-        "image": "../assets/img/hund/Leber.png"
-    }
+  {
+    "title": "Leberwurst-Pfötchen",
+    "image": "../assets/img/hund/Leberwurst.png",
+    "alt": "Leberwurst-Hüttenkäse-Eis in Pfotenform",
+    "vegan": false,
+    "color": "#fbe1e8",
+    "description": "Herzhaftes Eis aus Hüttenkäse und Leberwurst – perfekt für eure Hundis.",
+    "tags": ["herzhaft", "milchfrei", "proteinreich"],
+    "available": true
+  }
 ]

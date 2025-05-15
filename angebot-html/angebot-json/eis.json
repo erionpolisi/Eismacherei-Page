@@ -13,7 +13,7 @@
     "available": true
   },
   {
-    "title": "Zitrone",
+    "title": "Zitrone (v)",
     "image": "../assets/img/eis/Zitrone.png",
     "alt": "Zitroneneis erfrischend",
     "vegan": true,
@@ -90,7 +90,7 @@
   "available": true
 },
 {
-  "title": "Birne",
+  "title": "Birne (v)",
   "image": "../assets/img/eis/Birne.png",
   "alt": "Birneneis zart und fruchtig",
   "vegan": true,
@@ -180,7 +180,7 @@
   "available": true
 },
 {
-  "title": "Lychee",
+  "title": "Lychee (v)",
   "image": "../assets/img/eis/Lychee.png",
   "alt": "Lychee-Sorbet exotisch und hell",
   "vegan": true,
@@ -247,6 +247,16 @@
   "color": "#e7d5c1",
   "description": "Cremiges Milcheis mit feinem Kaffeegeschmack – für Kaffee-Liebhaber ein Muss.",
   "tags": ["milch", "kaffee", "klassisch"],
+  "available": true
+},
+{
+  "title": "Kokos (v)",
+  "image": "../assets/img/eis/Kokos.png",
+  "alt": "Veganes Kokos-Sorbet mit feinem Kokosgeschmack",
+  "vegan": true,
+  "color": "#fdfdfc",
+  "description": "Cremiges, veganes Sorbet mit feinem Kokosaroma – exotisch, mild und tropisch frisch.",
+  "tags": ["vegan", "sorbet", "exotisch", "mild"],
   "available": true
 },
 {
