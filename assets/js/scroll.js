@@ -1,71 +1,70 @@
-const scrollGalleryEl = document.getElementById('scrollGallery');
-const scrollWrapper = scrollGalleryEl.parentElement;
+document.addEventListener("DOMContentLoaded", async () => {
+  const scrollGalleryEls = document.querySelectorAll(".scroll-gallery-inner");
 
-async function fetchSlideData() {
-  const res = await fetch("angebot-json/torten.json");
-  if (!res.ok) throw new Error("Fehler beim Laden der torten.json");
-  return res.json();
-}
+  scrollGalleryEls.forEach(async scrollGalleryEl => {
+    const id = scrollGalleryEl.id || "torten"; // z. B. id="torten"
+    const scrollWrapper = scrollGalleryEl.closest(".scroll-gallery");
+    const jsonUrl = `angebot-json/${id}.json`;
 
-function createSlide({ image, title }) {
-  const slide = document.createElement('div');
-  slide.className = 'scroll-slide';
-  slide.innerHTML = `
-    <img src="${image}" alt="${title}">
-    <div class="scroll-slide-title">${title}</div>
-  `;
-  return slide;
-}
+    let slideData = [];
 
-let tortenData = [];
+    async function fetchSlideData() {
+      const res = await fetch(jsonUrl);
+      if (!res.ok) throw new Error(`Fehler beim Laden von ${jsonUrl}`);
+      return res.json();
+    }
 
-async function appendSlides() {
-  if (tortenData.length === 0) return;
-  tortenData.forEach(data => {
-    scrollGalleryEl.appendChild(createSlide(data));
-  });
-}
+    function createSlide({ image, title }) {
+      const slide = document.createElement("div");
+      slide.className = "scroll-slide";
+      slide.innerHTML = `
+        <img src="${image}" alt="${title}">
+        <div class="scroll-slide-title">${title}</div>
+      `;
+      return slide;
+    }
 
-fetchSlideData()
-  .then(data => {
-    tortenData = data;
-    appendSlides();
-    appendSlides(); // doppelt laden
-  })
-  .catch(err => {
-    console.error("Fehler beim Laden der Torten-Daten:", err);
-  });
+    async function appendSlides() {
+      if (slideData.length === 0) return;
+      slideData.forEach(data => {
+        scrollGalleryEl.appendChild(createSlide(data));
+      });
+    }
 
-scrollWrapper.addEventListener('scroll', () => {
-  const scrollLeft = scrollWrapper.scrollLeft;
-  const totalWidth = scrollGalleryEl.scrollWidth;
-  const visibleWidth = scrollWrapper.offsetWidth;
+    try {
+      slideData = await fetchSlideData();
+      appendSlides();
+      appendSlides(); // doppelt zum Start
+    } catch (err) {
+      console.error(`Fehler beim Laden der Galerie-Daten (${id}):`, err);
+    }
 
-  if (scrollLeft + visibleWidth >= totalWidth - 500) {
-    appendSlides();
-  }
-});
+    scrollWrapper.addEventListener("scroll", () => {
+      const scrollLeft = scrollWrapper.scrollLeft;
+      const totalWidth = scrollGalleryEl.scrollWidth;
+      const visibleWidth = scrollWrapper.offsetWidth;
 
-function manualScroll(dir) {
-  scrollWrapper.scrollBy({
-    left: dir * 320,
-    behavior: 'smooth'
-  });
-}
-
-let isHovering = false;
-const scrollBtns = document.querySelectorAll('.scroll-btn');
-
-[scrollWrapper, ...scrollBtns].forEach(el => {
-  el.addEventListener('mouseenter', () => isHovering = true);
-  el.addEventListener('mouseleave', () => isHovering = false);
-});
-
-setInterval(() => {
-  if (!isHovering) {
-    scrollWrapper.scrollBy({
-      left: 1,
-      behavior: 'smooth'
+      if (scrollLeft + visibleWidth >= totalWidth - 500) {
+        appendSlides();
+      }
     });
-  }
-}, 30);
+
+    window.manualScroll = function (dir) {
+      scrollWrapper.scrollBy({ left: dir * 320, behavior: "smooth" });
+    };
+
+    let isHovering = false;
+    const scrollBtns = document.querySelectorAll(".scroll-btn");
+
+    [scrollWrapper, ...scrollBtns].forEach(el => {
+      el.addEventListener("mouseenter", () => isHovering = true);
+      el.addEventListener("mouseleave", () => isHovering = false);
+    });
+
+    setInterval(() => {
+      if (!isHovering) {
+        scrollWrapper.scrollBy({ left: 1, behavior: "smooth" });
+      }
+    }, 30);
+  });
+});
