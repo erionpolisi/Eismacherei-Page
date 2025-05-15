@@ -211,6 +211,7 @@ input{
   align-items: center;
   column-gap: .5rem;
   font-weight: var(--font-medium);
+  margin-right: 2rem;
 }
 
 .nav-logo-img{
