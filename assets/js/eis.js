@@ -18,9 +18,6 @@ const containers = document.querySelectorAll(".angebot-container");
         div.innerHTML = `
           <img src="${eis.image}" alt="${eis.title.toLowerCase()}" class="angebot">
           <h3 class="angebot-title">${eis.title}</h3>
-          <button class="button angebot-button">
-            <i class='bx bx-category angebot-icon'></i>
-          </button>
         `;
 
         container.appendChild(div);

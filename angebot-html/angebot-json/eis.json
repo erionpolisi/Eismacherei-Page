@@ -39,31 +39,224 @@
     ],
     "available": true
   },
-  { "title": "Joghurt Himbeere", "image": "../assets/img/eis/Joghurt_Himbeere.png" },
-  { "title": "Fiocco", "image": "../assets/img/eis/Fiocco.png" },
-  { "title": "Cheesecake", "image": "../assets/img/eis/Cheesecake.png" },
-
-  { "title": "Mango (v)", "image": "../assets/img/eis/Mango.png" },
-  { "title": "Banane", "image": "../assets/img/eis/Banane.png" },
-  { "title": "Birne", "image": "../assets/img/eis/Birne.png" },
-  { "title": "Karamell Popcorn", "image": "../assets/img/eis/Karamell_Popcorn.png" },
-  { "title": "Pfirsich (v)", "image": "../assets/img/eis/Pfirsich.png" },
-
-  { "title": "Erdbeere (v)", "image": "../assets/img/eis/Erdbeere.png" },
-  { "title": "Himbeere (v)", "image": "../assets/img/eis/Himbeere.png" },
-  { "title": "Kirsche (v)", "image": "../assets/img/eis/Kirsche.png" },
-  { "title": "Amarena Kirsch", "image": "../assets/img/eis/Amarena_Kirsch.png" },
-
-  { "title": "Heidelbeere (v)", "image": "../assets/img/eis/Heidelbeere.png" },
-  { "title": "Bubble", "image": "../assets/img/eis/Bubble.png" },
-  { "title": "Lychee", "image": "../assets/img/eis/Lychee.png" },
-
-  { "title": "Grüner Apfel (v)", "image": "../assets/img/eis/Gruener_Apfel.png" },
-  { "title": "Pistazie", "image": "../assets/img/eis/Pistazie.png" },
-
-  { "title": "Schokolade", "image": "../assets/img/eis/Schokolade.png" },
-  { "title": "Haselnuss", "image": "../assets/img/eis/Haselnuss.png" },
-  { "title": "Stracciatella", "image": "../assets/img/eis/Stracciatella.png" },
-  { "title": "Cappuccino", "image": "../assets/img/eis/Cappuccino.png" },
-  { "title": "Malaga", "image": "../assets/img/eis/Malaga.png" }
+{
+  "title": "Joghurt Himbeere",
+  "image": "../assets/img/eis/Joghurt_Himbeere.png",
+  "alt": "Joghurt-Himbeer-Eis mit Fruchtswirls",
+  "vegan": false,
+  "color": "#fbe4e9",
+  "description": "Cremiges Joghurt-Eis mit fruchtigem Himbeerswirl.",
+  "tags": ["milch", "fruchtig"],
+  "available": true
+},
+{
+  "title": "Fiocco",
+  "image": "../assets/img/eis/Fiocco.png",
+  "alt": "Fiocco-Eis mit Schlagobers und Milch",
+  "vegan": false,
+  "color": "#f8f8f8",
+  "description": "Feines, schneeweißes Milcheis mit leichter Vanillenote – inspiriert von italienischem Schlagobers.",
+  "tags": ["klassisch", "milch", "cremig"],
+  "available": true
+},
+{
+  "title": "Cheesecake",
+  "image": "../assets/img/eis/Cheesecake.png",
+  "alt": "Cheesecake-Eis mit Keksstücken",
+  "vegan": false,
+  "color": "#fdf0e5",
+  "description": "Cremiges Eis mit Frischkäsegeschmack und Keksstückchen – inspiriert vom klassischen New York Cheesecake.",
+  "tags": ["kuchen", "milch", "cremig"],
+  "available": true
+},
+{
+  "title": "Mango (v)",
+  "image": "../assets/img/eis/Mango.png",
+  "alt": "Mango-Sorbet sonnengelb",
+  "vegan": true,
+  "color": "#fff3b0",
+  "description": "Intensiv fruchtiges, veganes Mango-Sorbet – exotisch und erfrischend.",
+  "tags": ["fruchtig", "sorbet", "vegan"],
+  "available": true
+},
+{
+  "title": "Banane",
+  "image": "../assets/img/eis/Banane.png",
+  "alt": "Bananeneis cremig und mild",
+  "vegan": false,
+  "color": "#fef6c5",
+  "description": "Cremiges Eis mit natürlichem Bananengeschmack – süß und mild.",
+  "tags": ["fruchtig", "milch", "klassisch"],
+  "available": true
+},
+{
+  "title": "Birne",
+  "image": "../assets/img/eis/Birne.png",
+  "alt": "Birneneis zart und fruchtig",
+  "vegan": true,
+  "color": "#f9fce1",
+  "description": "Feines, veganes Sorbet mit dem Geschmack sonnengereifter Birnen.",
+  "tags": ["fruchtig", "sorbet", "vegan"],
+  "available": true
+},
+{
+  "title": "Karamell Popcorn",
+  "image": "../assets/img/eis/Karamell_Popcorn.png",
+  "alt": "Karamell-Popcorn-Eis mit Crunch",
+  "vegan": false,
+  "color": "#f6e1c3",
+  "description": "Süßes Milcheis mit karamellisiertem Popcorn – für echtes Kinofeeling.",
+  "tags": ["süß", "milch", "knusprig"],
+  "available": true
+},
+{
+  "title": "Pfirsich (v)",
+  "image": "../assets/img/eis/Pfirsich.png",
+  "alt": "Pfirsich-Sorbet zart orange",
+  "vegan": true,
+  "color": "#ffe7c2",
+  "description": "Sanftes, veganes Pfirsich-Sorbet – sommerlich leicht und erfrischend.",
+  "tags": ["fruchtig", "sorbet", "vegan"],
+  "available": true
+},
+{
+  "title": "Erdbeere (v)",
+  "image": "../assets/img/eis/Erdbeere.png",
+  "alt": "Erdbeer-Sorbet in leuchtendem Rot",
+  "vegan": true,
+  "color": "#fde2e2",
+  "description": "Fruchtiges, veganes Sorbet aus sonnengereiften Erdbeeren – ein Sommerklassiker.",
+  "tags": ["fruchtig", "sorbet", "vegan"],
+  "available": true
+},
+{
+  "title": "Himbeere (v)",
+  "image": "../assets/img/eis/Himbeere.png",
+  "alt": "Himbeer-Sorbet intensiv rot",
+  "vegan": true,
+  "color": "#f8c8d0",
+  "description": "Kräftiges, veganes Himbeer-Sorbet – intensiv im Geschmack und herrlich erfrischend.",
+  "tags": ["fruchtig", "sorbet", "vegan"],
+  "available": true
+},
+{
+  "title": "Kirsche (v)",
+  "image": "../assets/img/eis/Kirsche.png",
+  "alt": "Kirsch-Sorbet dunkelrot",
+  "vegan": true,
+  "color": "#f5a6b4",
+  "description": "Veganes Sorbet mit süß-säuerlichem Kirschgeschmack – vollmundig und fruchtig.",
+  "tags": ["fruchtig", "sorbet", "vegan"],
+  "available": true
+},
+{
+  "title": "Amarena Kirsch",
+  "image": "../assets/img/eis/Amarena_Kirsch.png",
+  "alt": "Amarena-Kirsche-Eis mit Kirschstücken",
+  "vegan": false,
+  "color": "#fbe1e8",
+  "description": "Cremiges Milcheis mit intensiver Amarena-Kirsche und fruchtigen Stückchen.",
+  "tags": ["fruchtig", "milch", "klassisch"],
+  "available": true
+},
+{
+  "title": "Heidelbeere (v)",
+  "image": "../assets/img/eis/Heidelbeere.png",
+  "alt": "Heidelbeer-Sorbet violett",
+  "vegan": true,
+  "color": "#d7c3e5",
+  "description": "Veganes Sorbet mit intensiver Heidelbeernote – fruchtig, frisch und voll im Geschmack.",
+  "tags": ["fruchtig", "sorbet", "vegan"],
+  "available": true
+},
+{
+  "title": "Bubble",
+  "image": "../assets/img/eis/Bubble.png",
+  "alt": "Bubblegum-Eis in Pastellfarben",
+  "vegan": false,
+  "color": "#e7d1f7",
+  "description": "Süßes Milcheis mit Kaugummi-Geschmack – bunt, verspielt und besonders beliebt bei Kindern.",
+  "tags": ["süß", "milch", "kinder"],
+  "available": true
+},
+{
+  "title": "Lychee",
+  "image": "../assets/img/eis/Lychee.png",
+  "alt": "Lychee-Sorbet exotisch und hell",
+  "vegan": true,
+  "color": "#fef4f7",
+  "description": "Exotisches, veganes Sorbet mit dem feinen Geschmack der asiatischen Litschi-Frucht.",
+  "tags": ["fruchtig", "sorbet", "vegan", "exotisch"],
+  "available": true
+},
+{
+  "title": "Grüner Apfel (v)",
+  "image": "../assets/img/eis/Gruener_Apfel.png",
+  "alt": "Grüner-Apfel-Sorbet leuchtend grün",
+  "vegan": true,
+  "color": "#e5fcd3",
+  "description": "Erfrischendes, veganes Sorbet mit säuerlich-süßem Geschmack grüner Äpfel.",
+  "tags": ["fruchtig", "sorbet", "vegan", "säuerlich"],
+  "available": true
+},
+{
+  "title": "Pistazie",
+  "image": "../assets/img/eis/Pistazie.png",
+  "alt": "Pistazieneis cremig grün",
+  "vegan": false,
+  "color": "#e4eccc",
+  "description": "Cremiges Milcheis mit edlem Pistaziengeschmack – nussig, fein und beliebt.",
+  "tags": ["nussig", "milch", "klassisch"],
+  "available": true
+},
+{
+  "title": "Schokolade",
+  "image": "../assets/img/eis/Schokolade.png",
+  "alt": "Schokoladeneis dunkel und cremig",
+  "vegan": false,
+  "color": "#d6b8a6",
+  "description": "Intensives, cremiges Schokoladeneis mit feiner Kakaonote.",
+  "tags": ["klassisch", "milch", "schokolade"],
+  "available": true
+},
+{
+  "title": "Haselnuss",
+  "image": "../assets/img/eis/Haselnuss.png",
+  "alt": "Haselnusseis nussig und cremig",
+  "vegan": false,
+  "color": "#e9dbc7",
+  "description": "Cremiges Milcheis mit gerösteter Haselnuss – ein Klassiker unter den Nusseissorten.",
+  "tags": ["nussig", "milch", "klassisch"],
+  "available": true
+},
+{
+  "title": "Stracciatella",
+  "image": "../assets/img/eis/Stracciatella.png",
+  "alt": "Stracciatella-Eis mit Schokostückchen",
+  "vegan": false,
+  "color": "#fdfdfb",
+  "description": "Feines Milcheis mit knackigen Schokosplittern – cremig und schokoladig zugleich.",
+  "tags": ["milch", "klassisch", "schokolade"],
+  "available": true
+},
+{
+  "title": "Cappuccino",
+  "image": "../assets/img/eis/Cappuccino.png",
+  "alt": "Cappuccino-Eis mit feiner Kaffeearomatik",
+  "vegan": false,
+  "color": "#e7d5c1",
+  "description": "Cremiges Milcheis mit feinem Kaffeegeschmack – für Kaffee-Liebhaber ein Muss.",
+  "tags": ["milch", "kaffee", "klassisch"],
+  "available": true
+},
+{
+  "title": "Malaga",
+  "image": "../assets/img/eis/Malaga.png",
+  "alt": "Malaga-Eis mit Rosinen",
+  "vegan": false,
+  "color": "#f6e7d8",
+  "description": "Cremiges Milcheis mit Rosinen und feinem Rumaroma – ein klassischer Genuss für Erwachsene.",
+  "tags": ["milch", "klassisch", "rum", "rosinen"],
+  "available": true
+}
 ]
