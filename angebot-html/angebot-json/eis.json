@@ -1,0 +1,69 @@
+[
+  {
+    "title": "Vanille",
+    "image": "../assets/img/eis/Vanille.png",
+    "alt": "Vanilleeis in Waffel",
+    "vegan": false,
+    "color": "#f8f1dc",
+    "description": "Klassisches, cremiges Vanilleeis.",
+    "tags": [
+      "klassisch",
+      "milch"
+    ],
+    "available": true
+  },
+  {
+    "title": "Zitrone",
+    "image": "../assets/img/eis/Zitrone.png",
+    "alt": "Zitroneneis erfrischend",
+    "vegan": true,
+    "color": "#fefee2",
+    "description": "Sauer macht lustig – veganes Sorbet mit Zitrone.",
+    "tags": [
+      "fruchtig",
+      "sorbet",
+      "vegan"
+    ],
+    "available": true
+  },
+  {
+    "title": "Joghurt",
+    "image": "../assets/img/eis/Joghurt.png",
+    "alt": "Joghurt-Eis leicht und mild",
+    "vegan": false,
+    "color": "#fdfdfc",
+    "description": "Leicht säuerliches Milcheis mit Joghurt.",
+    "tags": [
+      "milch",
+      "frisch"
+    ],
+    "available": true
+  },
+  { "title": "Joghurt Himbeere", "image": "../assets/img/eis/Joghurt_Himbeere.png" },
+  { "title": "Fiocco", "image": "../assets/img/eis/Fiocco.png" },
+  { "title": "Cheesecake", "image": "../assets/img/eis/Cheesecake.png" },
+
+  { "title": "Mango (v)", "image": "../assets/img/eis/Mango.png" },
+  { "title": "Banane", "image": "../assets/img/eis/Banane.png" },
+  { "title": "Birne", "image": "../assets/img/eis/Birne.png" },
+  { "title": "Karamell Popcorn", "image": "../assets/img/eis/Karamell_Popcorn.png" },
+  { "title": "Pfirsich (v)", "image": "../assets/img/eis/Pfirsich.png" },
+
+  { "title": "Erdbeere (v)", "image": "../assets/img/eis/Erdbeere.png" },
+  { "title": "Himbeere (v)", "image": "../assets/img/eis/Himbeere.png" },
+  { "title": "Kirsche (v)", "image": "../assets/img/eis/Kirsche.png" },
+  { "title": "Amarena Kirsch", "image": "../assets/img/eis/Amarena_Kirsch.png" },
+
+  { "title": "Heidelbeere (v)", "image": "../assets/img/eis/Heidelbeere.png" },
+  { "title": "Bubble", "image": "../assets/img/eis/Bubble.png" },
+  { "title": "Lychee", "image": "../assets/img/eis/Lychee.png" },
+
+  { "title": "Grüner Apfel (v)", "image": "../assets/img/eis/Gruener_Apfel.png" },
+  { "title": "Pistazie", "image": "../assets/img/eis/Pistazie.png" },
+
+  { "title": "Schokolade", "image": "../assets/img/eis/Schokolade.png" },
+  { "title": "Haselnuss", "image": "../assets/img/eis/Haselnuss.png" },
+  { "title": "Stracciatella", "image": "../assets/img/eis/Stracciatella.png" },
+  { "title": "Cappuccino", "image": "../assets/img/eis/Cappuccino.png" },
+  { "title": "Malaga", "image": "../assets/img/eis/Malaga.png" }
+]
