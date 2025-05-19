@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const scrollGalleryEls = document.querySelectorAll(".scroll-gallery-inner");
 
   scrollGalleryEls.forEach(async scrollGalleryEl => {
-    const id = scrollGalleryEl.id || "torten"; // z. B. id="torten"
+    const id = scrollGalleryEl.id || "torten";
     const scrollWrapper = scrollGalleryEl.closest(".scroll-gallery");
     const jsonUrl = `angebot-json/${id}.json`;
 
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     try {
       slideData = await fetchSlideData();
       appendSlides();
-      appendSlides(); // doppelt zum Start
+      appendSlides();
     } catch (err) {
       console.error(`Fehler beim Laden der Galerie-Daten (${id}):`, err);
     }
@@ -56,15 +56,21 @@ document.addEventListener("DOMContentLoaded", async () => {
     let isHovering = false;
     const scrollBtns = document.querySelectorAll(".scroll-btn");
 
-    [scrollWrapper, ...scrollBtns].forEach(el => {
-      el.addEventListener("mouseenter", () => isHovering = true);
-      el.addEventListener("mouseleave", () => isHovering = false);
+    const pointerEls = [scrollWrapper, ...scrollBtns];
+    pointerEls.forEach(el => {
+      el.addEventListener("pointerenter", () => isHovering = true);
+      el.addEventListener("pointerleave", () => isHovering = false);
+      el.addEventListener("touchstart", () => isHovering = true);
+      el.addEventListener("touchend", () => isHovering = false);
     });
 
-    setInterval(() => {
-      if (!isHovering) {
-        scrollWrapper.scrollBy({ left: 1, behavior: "smooth" });
-      }
-    }, 30);
+    const isMobile = window.matchMedia("(max-width: 768px)").matches;
+    if (!isMobile) {
+      setInterval(() => {
+        if (!isHovering) {
+          scrollWrapper.scrollBy({ left: 1, behavior: "smooth" });
+        }
+      }, 30);
+    }
   });
 });
