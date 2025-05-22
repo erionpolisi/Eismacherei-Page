@@ -920,9 +920,17 @@ input{
 }
 
 @media screen and (min-width: 1400px){
-  .home-img{
-    height: 420px;
+  .home-content {
+    grid-template-columns: auto 1fr;
+    column-gap: 3rem;
   }
+
+  .home-img {
+    width: 500px;
+    height: auto;
+    max-width: none;
+  }
+
   .footer-img-one{
     width: 250px;
     right: 2%;
