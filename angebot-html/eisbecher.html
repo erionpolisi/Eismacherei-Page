@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eismacherei</title>
+
+  <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="stylesheet" href="../assets/css/scroll.css" />
+  <link rel="stylesheet" href="../assets/boxicons-2.1.4/css/boxicons.min.css" />
+
+</head>
+<body>
+  <a href="javascript:history.back()" class="back-button" id="zrk-btn">← Zurück</a>
+
+  <main class="main">
+    <section class="section angebot" id="angebot">
+      <h2 class="section-title">Eis Becher</h2>
+
+      <div class="scroll-gallery">
+        <div class="scroll-gallery-inner" id="eisbecher">
+          <!-- Slides werden von scroll.js eingefügt -->
+        </div>
+      </div>
+
+      <div class="scroll-nav">
+        <button class="scroll-btn" onclick="manualScroll(-1)">&#10094;</button>
+        <button class="scroll-btn" onclick="manualScroll(1)">&#10095;</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="../assets/js/scroll.js"></script>
+</body>
+</html>
