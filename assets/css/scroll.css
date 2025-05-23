@@ -27,7 +27,8 @@
 
   .scroll-slide img {
     width: 100%;
-    height: 250px;
+    height: 40vw;
+    max-height: 280px;
     object-fit: cover ;
   }
 
