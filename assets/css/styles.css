@@ -315,10 +315,17 @@ input{
   justify-self: center;
   border-radius: 1rem;
   border: 5px solid white;
+  background: #fff0f6;
+  padding: 5px;
+  box-shadow: 0 0 10px rgba(255, 182, 193, 0.5);
 }
+
 
 .home-img2{
   border: none;
+  background: none;
+  padding: none;
+  box-shadow: none;
 }
 
 
@@ -486,6 +493,18 @@ input{
   width: 200px;
   justify-self: center;
   animation: floating 2s ease-in-out infinite;
+}
+
+.about2-img{
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  display: block;
+  margin-top: 1rem;
+  border: 4px dashed pink;
+  border-radius: 12px;
+  padding: 6px;
+  background: #fff0f6;
 }
 
 #about {
@@ -784,6 +803,9 @@ input{
   .about-img{
     width: 250px;
   }
+  .about2-img{
+    width: 200px;
+  }
 
   .angebot-container{
     grid-template-columns: repeat(3, 200px);
@@ -892,6 +914,9 @@ input{
   }
   .about-img{
     width: 350px;
+  }
+  .about2-img{
+    width: 300px;
   }
   .about-description{
     padding-right: 2rem;
