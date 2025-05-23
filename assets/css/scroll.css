@@ -27,8 +27,8 @@
 
   .scroll-slide img {
     width: 100%;
-    height: 400px;
-    object-fit: cover;
+    height: 250px;
+    object-fit: cover ;
   }
 
   .scroll-slide-title {
@@ -56,6 +56,25 @@
   .scroll-btn:hover {
     color: var(--first-color-alt);
   }
+
+.image-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.image-overlay img {
+  max-width: 90vw;
+  max-height: 90vh;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}  
 
   @media screen and (max-width: 767px) {
     .scroll-gallery {

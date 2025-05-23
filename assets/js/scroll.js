@@ -1,4 +1,27 @@
 document.addEventListener("DOMContentLoaded", async () => {
+  const overlay = document.createElement("div");
+    overlay.className = "image-overlay";
+    overlay.id = "imageOverlay";
+    overlay.style.display = "none";
+
+    const overlayImg = document.createElement("img");
+    overlayImg.id = "overlayImage";
+    overlayImg.alt = "Zoomed image";
+
+    overlay.appendChild(overlayImg);
+    document.body.appendChild(overlay);
+
+    document.body.addEventListener("click", e => {
+      const target = e.target;
+      if (target.tagName === "IMG" && target.closest(".scroll-slide")) {
+        overlayImg.src = target.src;
+        overlay.style.display = "flex";
+      } else if (overlay.style.display === "flex") {
+        overlay.style.display = "none";
+        overlayImg.src = "";
+      }
+    });
+    
   const scrollGalleryEls = document.querySelectorAll(".scroll-gallery-inner");
 
   scrollGalleryEls.forEach(async scrollGalleryEl => {
