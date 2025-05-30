@@ -1,6 +1,6 @@
 [
   {
-    "title": "Schoko-Rundtörtchen",
+    "title": "Nougat Royal",
     "image": "../assets/img/mehlspeisen/mehlspeise1-img.jpg",
     "alt": "Zwei runde Schokoladentörtchen mit Eismacherei-Logo",
     "description": "Feine Rundtörtchen mit dunkler Schokoglasur, elegant dekoriert mit dem Eismacherei-Logo – ein edler Klassiker.",
@@ -29,22 +29,22 @@
     "copyright": "© 2025 Eismacherei",
     "license": "Nur zur Verwendung auf www.eismacherei.at"
   },
-  {
-    "title": "Kinderriegel-Schokotörtchen",
+    {
+    "title": "Cremeschnitten",
     "image": "../assets/img/mehlspeisen/mehlspeise4-img.jpg",
-    "alt": "Schokoladentörtchen mit Kinderriegel-Deko und Eismacherei-Logo",
-    "description": "Kreatives Schokotörtchen mit Sahne, Schokospänen und einem Kinderriegel als Topping – besonders beliebt bei Kindern.",
-    "tags": ["kinderriegel", "törtchen", "schokolade"],
+    "alt": "Drei rosa überzogene Cremeschnitten mit Eismacherei-Logo",
+    "description": "Klassische Cremeschnitten mit rosafarbener Glasur – fruchtig und zart aromatisiert mit Rum.",
+    "tags": ["cremig", "schnitten", "klassiker"],
     "available": true,
     "copyright": "© 2025 Eismacherei",
     "license": "Nur zur Verwendung auf www.eismacherei.at"
   },
   {
-    "title": "Punsch-Schnitten",
+    "title": "Kinderriegel-Schokotörtchen",
     "image": "../assets/img/mehlspeisen/mehlspeise5-img.jpg",
-    "alt": "Drei rosa überzogene Punschschnitten mit Eismacherei-Logo",
-    "description": "Klassische Punschschnitten mit rosafarbener Glasur – fruchtig und zart aromatisiert mit Rum.",
-    "tags": ["punsch", "schnitten", "klassiker"],
+    "alt": "Schokoladentörtchen mit Kinderriegel-Deko und Eismacherei-Logo",
+    "description": "Kreatives Schokotörtchen mit Sahne, Schokospänen und einem Kinderriegel als Topping – besonders beliebt bei Kindern.",
+    "tags": ["kinderriegel", "törtchen", "schokolade"],
     "available": true,
     "copyright": "© 2025 Eismacherei",
     "license": "Nur zur Verwendung auf www.eismacherei.at"

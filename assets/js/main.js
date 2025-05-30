@@ -85,7 +85,7 @@ const moreTXT = document.getElementById('moreTXT');
     if (moreBTN) {
         moreBTN.addEventListener('click', () => {
           const isHidden = moreTXT.classList.toggle('hidden');
-          moreBTN.innerText = isHidden ? 'Mehr' : 'Weniger anzeigen';
+          moreBTN.innerText = isHidden ? 'Mehr erfahren' : 'Weniger anzeigen';
         });
       }
 

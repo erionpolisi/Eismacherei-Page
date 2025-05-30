@@ -100,11 +100,11 @@
     "license": "Nur zur Verwendung auf www.eismacherei.at"
   },
   {
-    "title": "Germknödel",
+    "title": "Eisknödl",
     "image": "../assets/img/extras/9001.png",
-    "alt": "Warmer Germknödel mit Vanillesoße und Mohn",
-    "description": "Süßer Germknödel mit Vanillesoße, Mohnzucker und Schlagobers.",
-    "tags": ["germknödel", "dessert", "warm"],
+    "alt": "Warmer Eisknödl mit Vanillesoße und Mohn",
+    "description": "Süßer Eisknödl mit Vanillesoße, Mohnzucker und Schlagobers.",
+    "tags": ["eisknödl", "dessert", "warm"],
     "available": true,
     "copyright": "© 2025 Eismacherei",
     "license": "Nur zur Verwendung auf www.eismacherei.at"
