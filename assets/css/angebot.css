@@ -12,6 +12,18 @@
   overflow: hidden;
 }
 
+.label {
+  width: 100%;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: left;
+  margin: 2rem 0 1rem;
+  color: #3e3e3e;
+  padding-left: 0.5rem;
+  border-left: 4px solid #ffffff;
+  letter-spacing: 0.5px;
+}
+
 .flip-inner {
   position: relative;
   width: 100%;

@@ -14,6 +14,17 @@
     "available": true
   },
   {
+  "title": "Malaga",
+  "image": "../assets/img/eis/Malaga.png",
+  "alt": "Malaga-Eis mit Rosinen",
+  "vegan": false,
+  "hauptsortiment": true,
+  "color": "#f6e7d8",
+  "description": "Cremiges Milcheis mit Rosinen und feinem Rumaroma – ein klassischer Genuss für Erwachsene.",
+  "tags": ["milch", "klassisch", "rum", "rosinen"],
+  "available": true
+  },
+  {
     "title": "Zitrone (v)",
     "image": "../assets/img/eis/Zitrone.png",
     "alt": "Zitroneneis erfrischend",
@@ -65,16 +76,6 @@
   "available": true
 },
 {
-  "title": "Cheesecake",
-  "image": "../assets/img/eis/Cheesecake.png",
-  "alt": "Cheesecake-Eis mit Keksstücken",
-  "vegan": false,
-  "color": "#fdf0e5",
-  "description": "Cremiges Eis mit Frischkäsegeschmack und Keksstückchen – inspiriert vom klassischen New York Cheesecake.",
-  "tags": ["kuchen", "milch", "cremig"],
-  "available": true
-},
-{
   "title": "Mango (v)",
   "image": "../assets/img/eis/Mango.png",
   "alt": "Mango-Sorbet sonnengelb",
@@ -97,36 +98,6 @@
   "available": true
 },
 {
-  "title": "Birne (v)",
-  "image": "../assets/img/eis/Birne.png",
-  "alt": "Birneneis zart und fruchtig",
-  "vegan": true,
-  "color": "#f9fce1",
-  "description": "Feines, veganes Sorbet mit dem Geschmack sonnengereifter Birnen.",
-  "tags": ["fruchtig", "sorbet", "vegan"],
-  "available": true
-},
-{
-  "title": "Karamell Popcorn",
-  "image": "../assets/img/eis/Karamell_Popcorn.png",
-  "alt": "Karamell-Popcorn-Eis mit Crunch",
-  "vegan": false,
-  "color": "#f6e1c3",
-  "description": "Süßes Milcheis mit karamellisiertem Popcorn – für echtes Kinofeeling.",
-  "tags": ["süß", "milch", "knusprig"],
-  "available": true
-},
-{
-  "title": "Pfirsich (v)",
-  "image": "../assets/img/eis/Pfirsich.png",
-  "alt": "Pfirsich-Sorbet zart orange",
-  "vegan": true,
-  "color": "#ffe7c2",
-  "description": "Sanftes, veganes Pfirsich-Sorbet – sommerlich leicht und erfrischend.",
-  "tags": ["fruchtig", "sorbet", "vegan"],
-  "available": true
-},
-{
   "title": "Erdbeere (v)",
   "image": "../assets/img/eis/Erdbeere.png",
   "alt": "Erdbeer-Sorbet in leuchtendem Rot",
@@ -134,26 +105,6 @@
   "hauptsortiment": true,
   "color": "#fde2e2",
   "description": "Fruchtiges, veganes Sorbet aus sonnengereiften Erdbeeren – ein Sommerklassiker.",
-  "tags": ["fruchtig", "sorbet", "vegan"],
-  "available": true
-},
-{
-  "title": "Himbeere (v)",
-  "image": "../assets/img/eis/Himbeere.png",
-  "alt": "Himbeer-Sorbet intensiv rot",
-  "vegan": true,
-  "color": "#f8c8d0",
-  "description": "Kräftiges, veganes Himbeer-Sorbet – intensiv im Geschmack und herrlich erfrischend.",
-  "tags": ["fruchtig", "sorbet", "vegan"],
-  "available": true
-},
-{
-  "title": "Kirsche (v)",
-  "image": "../assets/img/eis/Kirsche.png",
-  "alt": "Kirsch-Sorbet dunkelrot",
-  "vegan": true,
-  "color": "#f5a6b4",
-  "description": "Veganes Sorbet mit süß-säuerlichem Kirschgeschmack – vollmundig und fruchtig.",
   "tags": ["fruchtig", "sorbet", "vegan"],
   "available": true
 },
@@ -188,26 +139,6 @@
   "color": "#e7d1f7",
   "description": "Süßes Milcheis mit Kaugummi-Geschmack – bunt, verspielt und besonders beliebt bei Kindern.",
   "tags": ["süß", "milch", "kinder"],
-  "available": true
-},
-{
-  "title": "Lychee (v)",
-  "image": "../assets/img/eis/Lychee.png",
-  "alt": "Lychee-Sorbet exotisch und hell",
-  "vegan": true,
-  "color": "#fef4f7",
-  "description": "Exotisches, veganes Sorbet mit dem feinen Geschmack der asiatischen Litschi-Frucht.",
-  "tags": ["fruchtig", "sorbet", "vegan", "exotisch"],
-  "available": true
-},
-{
-  "title": "Grüner Apfel (v)",
-  "image": "../assets/img/eis/Gruener_Apfel.png",
-  "alt": "Grüner-Apfel-Sorbet leuchtend grün",
-  "vegan": true,
-  "color": "#e5fcd3",
-  "description": "Erfrischendes, veganes Sorbet mit säuerlich-süßem Geschmack grüner Äpfel.",
-  "tags": ["fruchtig", "sorbet", "vegan", "säuerlich"],
   "available": true
 },
 {
@@ -255,6 +186,26 @@
   "available": true
 },
 {
+  "title": "Himbeere (v)",
+  "image": "../assets/img/eis/Himbeere.png",
+  "alt": "Himbeer-Sorbet intensiv rot",
+  "vegan": true,
+  "color": "#f8c8d0",
+  "description": "Kräftiges, veganes Himbeer-Sorbet – intensiv im Geschmack und herrlich erfrischend.",
+  "tags": ["fruchtig", "sorbet", "vegan"],
+  "available": true
+},
+{
+  "title": "Kirsche (v)",
+  "image": "../assets/img/eis/Kirsche.png",
+  "alt": "Kirsch-Sorbet dunkelrot",
+  "vegan": true,
+  "color": "#f5a6b4",
+  "description": "Veganes Sorbet mit süß-säuerlichem Kirschgeschmack – vollmundig und fruchtig.",
+  "tags": ["fruchtig", "sorbet", "vegan"],
+  "available": true
+},
+{
   "title": "Cappuccino",
   "image": "../assets/img/eis/Cappuccino.png",
   "alt": "Cappuccino-Eis mit feiner Kaffeearomatik",
@@ -275,14 +226,63 @@
   "available": true
 },
 {
-  "title": "Malaga",
-  "image": "../assets/img/eis/Malaga.png",
-  "alt": "Malaga-Eis mit Rosinen",
+  "title": "Lychee (v)",
+  "image": "../assets/img/eis/Lychee.png",
+  "alt": "Lychee-Sorbet exotisch und hell",
+  "vegan": true,
+  "color": "#fef4f7",
+  "description": "Exotisches, veganes Sorbet mit dem feinen Geschmack der asiatischen Litschi-Frucht.",
+  "tags": ["fruchtig", "sorbet", "vegan", "exotisch"],
+  "available": true
+},
+{
+  "title": "Grüner Apfel (v)",
+  "image": "../assets/img/eis/Gruener_Apfel.png",
+  "alt": "Grüner-Apfel-Sorbet leuchtend grün",
+  "vegan": true,
+  "color": "#e5fcd3",
+  "description": "Erfrischendes, veganes Sorbet mit säuerlich-süßem Geschmack grüner Äpfel.",
+  "tags": ["fruchtig", "sorbet", "vegan", "säuerlich"],
+  "available": true
+},
+{
+  "title": "Birne (v)",
+  "image": "../assets/img/eis/Birne.png",
+  "alt": "Birneneis zart und fruchtig",
+  "vegan": true,
+  "color": "#f9fce1",
+  "description": "Feines, veganes Sorbet mit dem Geschmack sonnengereifter Birnen.",
+  "tags": ["fruchtig", "sorbet", "vegan"],
+  "available": true
+},
+{
+  "title": "Karamell Popcorn",
+  "image": "../assets/img/eis/Karamell_Popcorn.png",
+  "alt": "Karamell-Popcorn-Eis mit Crunch",
   "vegan": false,
-  "hauptsortiment": true,
-  "color": "#f6e7d8",
-  "description": "Cremiges Milcheis mit Rosinen und feinem Rumaroma – ein klassischer Genuss für Erwachsene.",
-  "tags": ["milch", "klassisch", "rum", "rosinen"],
+  "color": "#f6e1c3",
+  "description": "Süßes Milcheis mit karamellisiertem Popcorn – für echtes Kinofeeling.",
+  "tags": ["süß", "milch", "knusprig"],
+  "available": true
+},
+{
+  "title": "Pfirsich (v)",
+  "image": "../assets/img/eis/Pfirsich.png",
+  "alt": "Pfirsich-Sorbet zart orange",
+  "vegan": true,
+  "color": "#ffe7c2",
+  "description": "Sanftes, veganes Pfirsich-Sorbet – sommerlich leicht und erfrischend.",
+  "tags": ["fruchtig", "sorbet", "vegan"],
+  "available": true
+},
+{
+  "title": "Cheesecake",
+  "image": "../assets/img/eis/Cheesecake.png",
+  "alt": "Cheesecake-Eis mit Keksstücken",
+  "vegan": false,
+  "color": "#fdf0e5",
+  "description": "Cremiges Eis mit Frischkäsegeschmack und Keksstückchen – inspiriert vom klassischen New York Cheesecake.",
+  "tags": ["kuchen", "milch", "cremig"],
   "available": true
 }
 ]
